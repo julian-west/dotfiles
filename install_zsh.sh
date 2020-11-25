@@ -12,7 +12,19 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 
 # make zsh the default
-chsh -s $(which zsh)
+# chsh -s $(which zsh)
+
+# install zsh-syntax-highlighting
+echo "Installing plugins..."
+
+echo "Installing syntax highlighting"
+cd $HOME/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting
+
+echo "Installing autosuggestions"
+git clone https://github.com/zsh-users/zsh-autosuggestions
+
+
 
 echo "Installations complete"
 
