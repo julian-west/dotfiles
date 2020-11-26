@@ -24,7 +24,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions
 
 echo "Installations complete"
 
-source .zshrc
+source $HOME/.zshrc
 
 
 # make zsh the default
