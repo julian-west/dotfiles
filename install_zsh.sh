@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 # script to install zsh
 
@@ -27,5 +28,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions
 echo "Installations complete"
 
 cd $DIR
-echo "Source .zshrc..."
-source .zshrc
+
+zsh
