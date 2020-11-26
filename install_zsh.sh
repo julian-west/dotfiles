@@ -23,5 +23,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions
 
 echo "Installations complete"
 
+zsh
+chsh -s $(which zsh)
 . $HOME/dotfiles/.zshrc
 
