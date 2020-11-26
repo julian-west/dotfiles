@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # script to install zsh
 
@@ -8,7 +7,7 @@ sudo apt install zsh
 
 # install oh-my-zsh
 echo "Installing oh-my-zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --skip-chsh
 
 
 
@@ -24,5 +23,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions
 
 echo "Installations complete"
 
-source $HOME/dotfiles/.zshrc
+. $HOME/dotfiles/.zshrc
 
