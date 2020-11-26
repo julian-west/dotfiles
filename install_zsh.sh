@@ -24,8 +24,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions
 
 echo "Installations complete"
 
-source $HOME/.zshrc
+source $HOME/dotfiles/.zshrc
 
-
-# make zsh the default
-sudo chsh -s $(which zsh)
