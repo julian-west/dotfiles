@@ -11,8 +11,6 @@ echo "Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
-# make zsh the default
-# chsh -s $(which zsh)
 
 # install zsh-syntax-highlighting
 echo "Installing plugins..."
@@ -24,7 +22,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting
 echo "Installing autosuggestions"
 git clone https://github.com/zsh-users/zsh-autosuggestions
 
-
-
 echo "Installations complete"
 
+source .zshrc
+
+
+# make zsh the default
+sudo chsh -s $(which zsh)
