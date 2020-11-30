@@ -7,7 +7,7 @@ call vundle#begin()
 " core plugins
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'                             " auto complete
+" Plugin 'Valloric/YouCompleteMe'                             " auto complete
 Plugin 'scrooloose/nerdtree'                                " side bar file tree
 Plugin 'tpope/vim-fugitive'                                 " git
 Plugin 'airblade/vim-gitgutter'                             " show git changes
