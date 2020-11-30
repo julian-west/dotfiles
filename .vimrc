@@ -2,16 +2,16 @@
 " Plugins
 """""""""""""""""""""""""""""""
 set rtp+=~/.vim/bundle/Vundle.vim
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set rtp+=~/.fzf
 call vundle#begin()
 " core plugins
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'                             " auto complete
 Plugin 'scrooloose/nerdtree'                                " side bar file tree
-Plugin 'kien/ctrlp.vim'                                     " file search
 Plugin 'tpope/vim-fugitive'                                 " git
 Plugin 'airblade/vim-gitgutter'                             " show git changes
+Plugin 'junegunn/fzf.vim'
 
 " python plugins
 Plugin 'vim-scripts/indentpython.vim'                       " python indentation
