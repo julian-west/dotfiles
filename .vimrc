@@ -7,7 +7,7 @@ call vundle#begin()
 " core plugins
 Plugin 'VundleVim/Vundle.vim'
 
-" Plugin 'Valloric/YouCompleteMe'                             " auto complete
+Plugin 'Valloric/YouCompleteMe'                             " auto complete
 Plugin 'scrooloose/nerdtree'                                " side bar file tree
 Plugin 'tpope/vim-fugitive'                                 " git
 Plugin 'airblade/vim-gitgutter'                             " show git changes
@@ -38,6 +38,7 @@ filetype off
 filetype plugin indent on
 
 set number
+set scrolloff=10
 set expandtab
 set smartindent
 set smartcase
@@ -48,6 +49,7 @@ set colorcolumn=88
 set mouse=a
 set splitbelow splitright
 set spell spelllang=en_us " z= see options, zg to add to dict, ]s move next
+
 colorscheme gruvbox
 set background=dark
 
