@@ -57,7 +57,7 @@ set updatetime=100
 
 let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
-" let g:slime_pythonipython = 1
+let g:slime_python_ipython = 1
 
 let g:ycm_path_to_python_interpreter = '/usr/local/bin/python3'
 
@@ -121,7 +121,7 @@ au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
-    \ set textwidth=79 |
+    \ set textwidth=88 |
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix |
