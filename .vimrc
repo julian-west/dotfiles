@@ -17,6 +17,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'vim-scripts/indentpython.vim'                       " python indentation
 Plugin 'psf/black'                                          " black auto formatting
 Plugin 'jpalardy/vim-slime'                                 " tmux send lines to REPL
+Plugin 'vim-python/python-syntax'                           " better Python syntax highlighting
 
 " other
 Plugin 'vim-airline/vim-airline'                            " info bar at bottom
@@ -133,6 +134,8 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
+
+let g:python_highlight_all = 1
 
 """""""""""""""""""""""""""""""
 " Autocommands
