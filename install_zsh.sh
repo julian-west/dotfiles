@@ -2,13 +2,18 @@
 
 # script to install zsh
 
-# install zsh
 set -e
 
 DIR=$PWD
 
-echo "Installing zsh..."
-sudo apt -y install zsh
+echo "Checking for ZSH installation"
+if ! command -v zsh &> /dev/null
+then
+	echo "Installing zsh..."
+	sudo apt -y install zsh
+else
+	echo "zsh already installed"
+fi
 
 # install oh-my-zsh
 echo "Installing oh-my-zsh..."
@@ -29,4 +34,5 @@ echo "Installations complete"
 
 cd $DIR
 
-zsh
+sudo sh -c "echo $(which zsh) >> /etc/shells"
+chsh -s $(which zsh)
