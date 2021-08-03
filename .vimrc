@@ -38,10 +38,14 @@ set nocompatible
 filetype off
 filetype plugin indent on
 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+set backspace=indent,eol,start
+
 set number
 set scrolloff=10
-set expandtab
-set smartindent
 set smartcase
 set noerrorbells
 set encoding=utf-8

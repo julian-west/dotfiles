@@ -11,7 +11,8 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 yes | ~/.fzf/install
 
 echo "Installing ripgrep"
-sudo apt-get install ripgrep
+# sudo apt-get install ripgrep
+brew install ripgrep
 
 echo "Installing plugins..."
 vim +PluginInstall +qall
