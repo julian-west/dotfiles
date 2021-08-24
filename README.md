@@ -20,7 +20,7 @@ bash install_zsh.sh
 
 **Install vim**
 
-Install vim with personalised config and plugins
+Install vim with personalised config and plugins. Also installs `fzf` for commandline searching.
 
 ```
 bash install_vim.sh
