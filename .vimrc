@@ -27,6 +27,7 @@ Plugin 'tpope/vim-commentary'                               " comment code
 Plugin 'chrisbra/Colorizer'                                 " colour hex codes
 Plugin 'mhinz/vim-startify'                                 " open previous files
 Plugin 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plugin 'christoomey/vim-tmux-navigator'                     " allow compatibility of vim and tmux navigation bindings
 call vundle#end()
 
 
@@ -107,6 +108,10 @@ map <C-n> :NERDTreeToggle<CR>
 " YCM commands
 noremap <leader>gd :YcmCompleter GoToDefinition<CR>
 
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
 """""""""""""""""""""""""""""""
 " Shortcuts
 """"""""""""""""""""""""""""""'
@@ -146,6 +151,9 @@ let g:python_highlight_all = 1
 """"""""""""""""""""""""""""""'
 " run black formatter on saving Python files
 autocmd BufWritePre *.py execute ':Black'
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
 
 
 """""""""""""""""""""""""""""""
