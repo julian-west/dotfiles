@@ -104,6 +104,7 @@ noremap <silent> <S-Down> :resize +3<CR>
 
 " nerdtree settings
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 " YCM commands
 noremap <leader>gd :YcmCompleter GoToDefinition<CR>
