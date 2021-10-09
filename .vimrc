@@ -113,6 +113,11 @@ noremap <leader>gd :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
+" git commands
+nmap <leader>gs :G<CR>
+nmap <leader>gg :diffget //2<CR>
+nmap <leader>gh :diffget //3<CR>
+
 """""""""""""""""""""""""""""""
 " Shortcuts
 """"""""""""""""""""""""""""""'
