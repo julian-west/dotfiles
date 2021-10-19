@@ -118,6 +118,9 @@ nmap <leader>gs :G<CR>
 nmap <leader>gg :diffget //2<CR>
 nmap <leader>gh :diffget //3<CR>
 
+" fzf command
+nnoremap <silent> <C-f> :GFiles<CR>
+
 """""""""""""""""""""""""""""""
 " Shortcuts
 """"""""""""""""""""""""""""""'
