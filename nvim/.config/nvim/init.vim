@@ -49,7 +49,9 @@ if has("nvim")
 "    Plug 'hrsh7th/cmp-nvim-lsp'
 "    Plug 'hrsh7th/cmp-buffer'
 "    Plug 'hrsh7th/nvim-cmp'
-"
+
+    Plug 'kyazdani42/nvim-web-devicons'
+
     Plug 'scrooloose/nerdtree'
     Plug 'tpope/vim-commentary'
 
