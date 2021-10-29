@@ -22,6 +22,7 @@ set colorcolumn=88
 set mouse=a
 set splitbelow splitright
 set spell spelllang=en_us " z= see options, zg to add to dict, ]s move next
+set updatetime=100
 
 
 """""""""""""""""""""""""""""""
@@ -54,6 +55,7 @@ if has("nvim")
 
     Plug 'scrooloose/nerdtree'
     Plug 'tpope/vim-commentary'
+    Plug 'airblade/vim-gitgutter'
 
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'gruvbox-community/gruvbox'
