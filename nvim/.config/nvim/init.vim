@@ -54,8 +54,9 @@ if has("nvim")
     Plug 'kyazdani42/nvim-web-devicons'
 
     Plug 'scrooloose/nerdtree'
-    Plug 'tpope/vim-commentary'
-    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-commentary'                 " easy commenting code
+    Plug 'airblade/vim-gitgutter'               " show git changes in file
+    Plug 'christoomey/vim-tmux-navigator'       " allow compatibility with tmux and vim key bindings
 
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'gruvbox-community/gruvbox'

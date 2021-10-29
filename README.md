@@ -38,7 +38,7 @@ brew install stow
 sudo apt-get update && install stow
 
 # create symlinks
-stow tmux zsh nvim fish #etc.
+stow tmux zsh nvim fish git #etc.
 ```
 
 Note: make sure you 'source' each dotfile to make sure changes have been make
