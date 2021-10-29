@@ -28,10 +28,17 @@ bash install_vim.sh
 
 **Build symlinks**
 
-Symlink dotfiles configurations to the dotfiles in the $HOME directory
+Symlink dotfiles configurations to the dotfiles in the $HOME directory using stow
 
 ```
-bash build_links.sh
+# install macos
+brew install stow
+
+# install ubuntu
+sudo apt-get update && install stow
+
+# create symlinks
+stow tmux zsh nvim fish #etc.
 ```
 
 Note: make sure you 'source' each dotfile to make sure changes have been make
