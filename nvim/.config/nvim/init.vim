@@ -65,14 +65,23 @@ if has("nvim")
     Plug 'hoob3rt/lualine.nvim'                 " status line
 
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-    Plug 'gruvbox-community/gruvbox'
 endif
 
 call plug#end()
 
-
-colorscheme gruvbox
-set background=dark
+" true color
+if exists("&termguicolors") && exists("&winblend")
+  syntax enable
+  set termguicolors
+  set winblend=0
+  set wildoptions=pum
+  set pumblend=5
+  set background=dark
+  " Use NeoSolarized
+  let g:neosolarized_termtrans=1
+  runtime ./colors/NeoSolarized.vim
+  colorscheme NeoSolarized
+endif
 
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
