@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = jnes
+	email = julian.west@gft.com
+[core]
+	editor = vim
+
+[alias]
+    open = "!hub browse"
