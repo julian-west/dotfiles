@@ -63,6 +63,7 @@ if has("nvim")
     Plug 'airblade/vim-gitgutter'               " show git changes in file
     Plug 'christoomey/vim-tmux-navigator'       " allow compatibility with tmux and vim key bindings
     Plug 'hoob3rt/lualine.nvim'                 " status line
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 endif
@@ -129,4 +130,7 @@ nnoremap <leader>= :wincmd =<cr>
 nmap <leader>gs :G<CR>
 nmap <leader>gg :diffget //2<CR>
 nmap <leader>gh :diffget //3<CR>
+
+" find and replace under cursor
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
