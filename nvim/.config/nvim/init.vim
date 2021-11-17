@@ -59,6 +59,7 @@ if has("nvim")
     Plug 'scrooloose/nerdtree'
     Plug 'tpope/vim-commentary'                 " easy commenting code
     Plug 'tpope/vim-fugitive'                   " git
+    Plug 'APZelos/blamer.nvim'                  " git blame
     Plug 'tpope/vim-rhubarb'                    " browse git repos
     Plug 'airblade/vim-gitgutter'               " show git changes in file
     Plug 'christoomey/vim-tmux-navigator'       " allow compatibility with tmux and vim key bindings
