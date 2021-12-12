@@ -4,7 +4,8 @@
 	name = jnes
 	email = julian.west@gft.com
 [core]
-	editor = vim
+	editor = nvim
 
 [alias]
     open = "!hub browse"
+	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
