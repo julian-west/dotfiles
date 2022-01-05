@@ -69,7 +69,10 @@ ZSH_THEME="robbyrussell"
 # fix permissions error
 ZSH_DISABLE_COMPFIX=true
 
-FZF_BASE="$HOME/."
+FZF_BASE="$HOME/.fzf"
+
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -80,7 +83,7 @@ plugins=(
 	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
-        
+    fzf
 )
 
 source $ZSH/oh-my-zsh.sh
