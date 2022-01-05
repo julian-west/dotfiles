@@ -90,7 +90,7 @@ let NERDTreeShowHidden=1
 
 
 """""""""""""""""""""""""""""""
-" Key remappings
+" key remappings
 """"""""""""""""""""""""""""""'
 
 let mapleader = ","
@@ -134,4 +134,7 @@ nmap <leader>gh :diffget //3<CR>
 
 " find and replace under cursor
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
+" autoformat python files
+nnoremap <leader>b :!black %<CR>:!isort %<CR>
 
