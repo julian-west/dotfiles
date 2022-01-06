@@ -102,6 +102,8 @@ nnoremap <leader>O O<esc>
 " copy and paste from 'register'
 vmap <C-c> "+y
 vmap <C-v> c<esc>"+p
+noremap <leader>y "*y
+noremap <leader>p "*p
 
 " enclose word in quotes
 nnoremap <leader>' ciW'<C-r>"'<Esc>

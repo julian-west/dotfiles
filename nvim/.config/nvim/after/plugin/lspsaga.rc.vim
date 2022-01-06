@@ -39,3 +39,4 @@ saga.init_lsp_saga {
 EOF
 
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
+nnoremap <leader>gr :Lspsaga rename<CR>
