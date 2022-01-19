@@ -11,3 +11,5 @@ if type -q exa
   alias ls "exa --icons"
   alias lla "ll -a"
 end
+
+starship init fish | source
