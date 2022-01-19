@@ -5,11 +5,21 @@ end
 set fish_greeting ""
 
 set -gx TERM xterm-256color
+set -gx EDITOR nvim
+
+set -Ux PYENV_ROOT $HOME/.pyenv
+set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 
 if type -q exa
   alias ll "exa -l -g --icons"
   alias ls "exa --icons"
   alias lla "ll -a"
 end
+
+alias zl "z -l"
+
+status is-login; and pyenv init --path | source
+status is-interactive; and pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source
 
 starship init fish | source
