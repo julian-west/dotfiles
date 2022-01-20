@@ -27,3 +27,6 @@ status is-interactive; and pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source
 
 starship init fish | source
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '$HOME/google-cloud-sdk/path.fish.inc' ]; . '$HOME/google-cloud-sdk/path.fish.inc'; end
