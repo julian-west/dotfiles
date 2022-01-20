@@ -1,1 +1,4 @@
 *.swp
+
+# fish local config
+fish/.config/fish/fish_variables
