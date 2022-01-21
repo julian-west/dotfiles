@@ -14,13 +14,12 @@ if type -q exa
   alias ll "exa -l -g --icons"
   alias ls "exa --icons"
   alias lla "ll -a"
+  alias lt "exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
 end
 
-# list z directories and scores
-alias zl "z -l"
+alias zl "z -l" # list z directories and scores
 
-# toggle gcloud info on the prompt
-alias gt "starship toggle gcloud disabled"
+alias gt "starship toggle gcloud disabled" # toggle gcloud info on the prompt
 
 status is-login; and pyenv init --path | source
 status is-interactive; and pyenv init - | source
