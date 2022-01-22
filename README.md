@@ -2,15 +2,48 @@
 
 Dotfile Configurations 
 
+![dotfiles screenshot](images/dotfiles_screenshot.png)
+
 Currently using n(eo)vim and zsh as main editor/terminal combo.
 
 ## Context
 
-The configurations in this repository are unlikely to be suitable for every developer. I am a ML Engineer primarily working with Python and using cloud providers such as GCP and AWS. These dotfiles reflect my daily Python workflow working in zsh + tmux + neovim from the command line.
+The configurations in this repository are unlikely to be suitable for every developer. I don't recommend you blindly install/overwrite your current configurations with this files. Instead, read the config files and take the bits you like.
+
+I am a ML Engineer primarily working with Python and using cloud providers such as GCP and AWS. These dotfiles reflect my daily Python workflow working in zsh + tmux + neovim from the command line.
 
 I use `pyenv` for Python version and virtual environment management and [FZF](https://github.com/junegunn/fzf) for fuzzy finding on the command line.
 
-## Getting Started (MacOS)
+## NeoVim Setup 
+  
+- [vim-plug](https://github.com/junegunn/vim-plug) - A minimalist Vim plugin manager
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of configurations for Neovim's built-in LSP
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - [Treesitter](https://github.com/tree-sitter/tree-sitter) configurations and abstraction layer for Neovim
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A completion plugin for neovim coded in Lua
+- [lspsaga.nvim](https://github.com/tami5/lspsaga.nvim) - A light-weight LSP plugin based on Neovim built-in LSP with highly a performant UI
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
+- [NeoSolarized color scheme](https://github.com/overcache/NeoSolarized)
+
+## Oh-my-ZSH
+
+- [Starship (prompt)](https://starship.rs/) - Minimal cross-shell prompt (see starship.toml for config)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
+- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
+- [Exa](https://the.exa.website/) - `ls` replacement
+
+## Fish
+
+- [Fish shell](https://fishshell.com/) - shell with great out-of-the-box functionality (syntax highlighting and autocomplete)
+- [Starship (prompt)](https://starship.rs/) - Minimal cross-shell prompt (see starship.toml for config)
+- [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
+- [z for fish](https://github.com/jethrokuan/z) - Directory jumping
+- [Exa](https://the.exa.website/) - `ls` replacement
+
+
+---
+
+## How to Use (MacOS)
 
 **Clone Repo**
 
@@ -24,6 +57,15 @@ git clone https://github.com/julian-west/dotfiles.git
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+**Install command line programs in the Brewfile**
+
+> Caution: don't blindy install everything. Better approach to use a more minimal brewfile
+
+**Note: The Brewfile does not support version lock syntax and will download the latest version of each package.**
+
+```
+brew bundle
+```
 **Install FZF**
 
 I download and install FZF directly from `git`
@@ -33,17 +75,10 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-**Install command line programs in the Brewfile**
-
-> Caution: don't blindy install everything. Better approach to use a more minimal brewfile
-
-```
-brew bundle
-```
 
 **Install zsh**
 
-Install `zsh` from git, install plugins and set as primary shell
+Install `zsh`, install plugins and set as primary shell
 
 ```
 bash install_zsh.sh
@@ -53,9 +88,15 @@ bash install_zsh.sh
 
 Symlink dotfiles configurations to the dotfiles in the $HOME directory using stow
 
+I have organised the directory structure so you can pick and choose which configs you wish to use. You can create symlinks using [stow](https://www.gnu.org/software/stow/)
+
 ```
 # create symlinks between dotfiles and master configs
-stow tmux zsh nvim fish git #etc.
+# e.g. create symlink for tmux config only
+stow tmux
+
+# or stow all folders
+stow tmux zsh nvim fish git starship
 ```
 
 Note: make sure you 'source' each dotfile to make sure changes have been made
@@ -66,10 +107,9 @@ Automation and configurations mainly aimed at MacOS. Need to test and debug for 
 
 Brewfile contains the kitchen sink -- might make a more 'minimal' version in the future. Don't blindly install everything as it is probably not all needed
 
-The Brewfile does not support version lock syntax and will download the latest version of each package.
+## Resources
 
-## Housekeeping
+These dotfile configuration have been heavily inspired by the following resources. I highly recommend you check them out:
+- [Devsalife dotfiles + YouTube channel](https://github.com/craftzdog/dotfiles-public)
+- [Chris Toomey - Tmux Course](https://thoughtbot.com/upcase/tmux)
 
-Things still to fix/tidy up since migration to neovim.
-- improve automation of installation scripts
-- fish configuration still needs finishing (currently still using zsh as main terminal)
