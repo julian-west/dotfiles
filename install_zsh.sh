@@ -4,8 +4,6 @@
 
 set -e
 
-DIR=$PWD
-
 echo "Checking for ZSH installation"
 if ! command -v zsh &> /dev/null
 then
@@ -24,15 +22,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo "Installing plugins..."
 
 echo "Installing syntax highlighting"
-cd $HOME/.oh-my-zsh/custom/plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
 echo "Installing autosuggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+echo "Installing zsh-z"
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
 echo "Installations complete"
 
-cd $DIR
 
 sudo sh -c "echo $(which zsh) >> /etc/shells"
 chsh -s $(which zsh)
