@@ -16,6 +16,8 @@ require'nvim-treesitter.configs'.setup {
     "css",
     "bash",
     "dockerfile",
+    "markdown",
+    "make",
   },
 }
 EOF
