@@ -26,6 +26,7 @@ source $ZSH/oh-my-zsh.sh
 # aliases
 alias python=python3
 alias gt="starship toggle gcloud disabled" # toggle gcloud info on the prompt
+alias gs="git status"
 
 if command -v exa &> /dev/null
 then

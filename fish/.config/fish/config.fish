@@ -18,7 +18,7 @@ if type -q exa
 end
 
 alias zl "z -l" # list z directories and scores
-
+alias gs "git status"
 alias gt "starship toggle gcloud disabled" # toggle gcloud info on the prompt
 
 status is-login; and pyenv init --path | source
