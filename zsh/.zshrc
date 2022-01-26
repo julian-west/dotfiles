@@ -7,6 +7,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # fix permissions error
 ZSH_DISABLE_COMPFIX=true
 
+# need to disable in order for exa ls alias to work
+DISABLE_LS_COLORS="true"
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=244"
+
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -19,6 +24,9 @@ plugins=(
 	zsh-autosuggestions
     fzf
     zsh-z
+    dotenv
+    history
+    vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -35,6 +43,8 @@ then
     alias lla="ll -a"
     alias lt="exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
 fi
+
+alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
 #yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -61,10 +71,12 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
-# fzf
-FZF_BASE="$HOME/.fzf"
+# FZF settings
+export FZF_BASE="$HOME/.fzf"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files -g "!.git/"'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # use starship prompt
