@@ -4,11 +4,13 @@ Dotfile Configurations
 
 ![dotfiles screenshot](images/dotfiles_screenshot.png)
 
-Currently using n(eo)vim and zsh as main editor/terminal combo.
+Currently using n(eo)vim and zsh as main editor/terminal combo and using the [Starship prompt](https://starship.rs/).
 
 ## Context
 
-The configurations in this repository are unlikely to be suitable for every developer. I don't recommend you blindly install/overwrite your current configurations with this files. Instead, read the config files and take the bits you like.
+The configurations in this repository are unlikely to be suitable for every developer. 
+
+I don't recommend you blindly install/overwrite your current configurations with this files. Instead, read the config files and take the bits you like, line by line.
 
 I am a ML Engineer primarily working with Python and using cloud providers such as GCP and AWS. These dotfiles reflect my daily Python workflow working in zsh + tmux + neovim from the command line.
 
@@ -31,8 +33,12 @@ I use `pyenv` for Python version and virtual environment management and [FZF](ht
 - [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
 - [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
 - [Exa](https://the.exa.website/) - `ls` replacement
+- [z-zsh](https://github.com/agkozak/zsh-z) -- Directory jumping
+- [vi-mode](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode) - Vim keybindings on the command line
 
 ## Fish
+
+Fish shell and prompt is basically set up exactly the same as oh-my-zsh
 
 - [Fish shell](https://fishshell.com/) - shell with great out-of-the-box functionality (syntax highlighting and autocomplete)
 - [Starship (prompt)](https://starship.rs/) - Minimal cross-shell prompt (see starship.toml for config)

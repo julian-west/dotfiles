@@ -76,7 +76,7 @@ export FZF_BASE="$HOME/.fzf"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files -g "!.git/"'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # use starship prompt
