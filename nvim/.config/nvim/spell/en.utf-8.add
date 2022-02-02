@@ -80,3 +80,4 @@ flake8
 nbqa
 formatter
 zsh
+behaviour

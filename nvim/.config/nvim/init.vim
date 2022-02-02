@@ -64,6 +64,8 @@ if has("nvim")
     Plug 'airblade/vim-gitgutter'               " show git changes in file
     Plug 'christoomey/vim-tmux-navigator'       " allow compatibility with tmux and vim key bindings
     Plug 'hoob3rt/lualine.nvim'                 " status line
+    Plug 'jpalardy/vim-slime'                   " tmux slime
+
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -87,6 +89,11 @@ endif
 
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+
+" vim-slime
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+let g:slime_python_ipython = 1
 
 
 """""""""""""""""""""""""""""""
