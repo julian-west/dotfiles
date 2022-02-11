@@ -51,13 +51,13 @@ Fish shell and prompt is basically set up exactly the same as oh-my-zsh
 
 ## How to Use (MacOS)
 
-**Clone Repo**
+### Clone Repo
 
 ```
 git clone https://github.com/julian-west/dotfiles.git
 ```
 
-**Install brew**
+### Install Homebrew
 
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -72,7 +72,9 @@ git clone https://github.com/julian-west/dotfiles.git
 ```
 brew bundle
 ```
-**Install FZF**
+### Install FZF
+
+FZF is a command line fuzzy file finder
 
 I download and install FZF directly from `git`
 
@@ -82,15 +84,37 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ```
 
 
-**Install zsh**
+### Install zsh
 
-Install `zsh`, install plugins and set as primary shell
+Install `zsh`, install plugins and set as primary shell using the following script:
 
 ```
 bash install_zsh.sh
 ```
 
-**Build symlinks**
+### Install Neovim
+
+```shell
+# install neovim from Homebrew
+brew install neovim
+```
+
+**Install vim-plug**
+
+I use [vim-plug](https://github.com/junegunn/vim-plug) to manage and install neovim plugins.
+
+Install using the following command (from the documentation)
+
+```shell
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+**Install plugins**
+
+Open the `init.vim` file in neovim and install the plugins using `:PlugInstall` 
+
+### Build symlinks
 
 Symlink dotfiles configurations to the dotfiles in the $HOME directory using stow
 
