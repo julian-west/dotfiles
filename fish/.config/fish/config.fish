@@ -14,7 +14,7 @@ if type -q exa
   alias ll "exa -l -g --icons"
   alias ls "exa --icons"
   alias lla "ll -a"
-  alias lt "exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
+  alias lt "exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints|*.egg-info*'"
 end
 
 alias zl "z -l" # list z directories and scores
