@@ -21,7 +21,7 @@ set cursorline
 set colorcolumn=88
 set mouse=a
 set splitbelow splitright
-set spell spelllang=en_us " z= see options, zg to add to dict, ]s move next
+set spell spelllang=en_gb " z= see options, zg to add to dict, ]s move next
 set updatetime=100
 
 
