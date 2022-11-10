@@ -98,6 +98,19 @@ bash install_zsh.sh
 # install neovim from Homebrew
 brew install neovim
 ```
+**Install language-server for LSP**
+
+I mainly use Python for development and use [pyright](https://github.com/microsoft/pyright) as my language server. In order for the LSP to work you need to install globally `pyright` and also install `pyright` and `neovim` into your Python virtual environment.
+
+```
+# install pyright
+npm install -g pyright
+```
+
+```
+# install into your Python virtual environment
+pip install pyright neovim
+```
 
 **Install vim-plug**
 
