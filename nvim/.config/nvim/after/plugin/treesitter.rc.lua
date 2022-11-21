@@ -1,4 +1,3 @@
-lua <<EOF
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
@@ -7,6 +6,9 @@ require'nvim-treesitter.configs'.setup {
   indent = {
     enable = false,
     disable = {},
+  },
+  autotag = {
+    enable = true,
   },
   ensure_installed = {
     "python",
@@ -18,6 +20,7 @@ require'nvim-treesitter.configs'.setup {
     "dockerfile",
     "markdown",
     "make",
+    "lua",
   },
+  auto_install = true,
 }
-EOF

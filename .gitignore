@@ -3,3 +3,7 @@
 # fish local config
 fish/.config/fish/fish_variables
 fish/.config/fish/config.fish.backup
+
+
+nvim/.config/nvim/plugin/packer_compiled.lua
+
