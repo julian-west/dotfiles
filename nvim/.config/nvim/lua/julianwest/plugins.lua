@@ -48,6 +48,8 @@ return packer.startup(function(use)
 
   -- git
   use("lewis6991/gitsigns.nvim")
+  use("APZelos/blamer.nvim")
+  use("tpope/vim-fugitive")
 
   -- syntax highlighting
   use({

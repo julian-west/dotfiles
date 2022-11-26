@@ -21,7 +21,8 @@ require('telescope').setup{
   defaults = {
     mappings = {
       i = {
-        ["<esc>"] = actions.close
+        ["<esc>"] = actions.close,
+        ["<C-d>"] = actions.delete_buffer
       },
     },
     file_ignore_patterns = { 
