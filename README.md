@@ -1,6 +1,6 @@
 # Dotfiles
 
-Dotfile Configurations 
+Dotfile Configurations
 
 ![dotfiles screenshot](images/dotfiles_screenshot.png)
 
@@ -8,7 +8,7 @@ Currently using n(eo)vim and zsh as main editor/terminal combo and using the [St
 
 ## Context
 
-The configurations in this repository are unlikely to be suitable for every developer. 
+The configurations in this repository are unlikely to be suitable for every developer.
 
 I don't recommend you blindly install/overwrite your current configurations with this files. Instead, read the config files and take the bits you like, line by line.
 
@@ -16,8 +16,8 @@ I am a ML Engineer primarily working with Python and using cloud providers such 
 
 I use `pyenv` for Python version and virtual environment management and [FZF](https://github.com/junegunn/fzf) for fuzzy finding on the command line.
 
-## NeoVim Setup 
-  
+## NeoVim Setup
+
 - [vim-plug](https://github.com/junegunn/vim-plug) - A minimalist Vim plugin manager
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of configurations for Neovim's built-in LSP
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - [Treesitter](https://github.com/tree-sitter/tree-sitter) configurations and abstraction layer for Neovim
@@ -46,7 +46,6 @@ Fish shell and prompt is basically set up exactly the same as oh-my-zsh
 - [z for fish](https://github.com/jethrokuan/z) - Directory jumping
 - [Exa](https://the.exa.website/) - `ls` replacement
 
-
 ---
 
 ## How to Use (MacOS)
@@ -72,6 +71,7 @@ git clone https://github.com/julian-west/dotfiles.git
 ```
 brew bundle
 ```
+
 ### Install FZF
 
 FZF is a command line fuzzy file finder
@@ -82,7 +82,6 @@ I download and install FZF directly from `git`
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
-
 
 ### Install zsh
 
@@ -98,6 +97,7 @@ bash install_zsh.sh
 # install neovim from Homebrew
 brew install neovim
 ```
+
 **Install language-server for LSP**
 
 I mainly use Python for development and use [pyright](https://github.com/microsoft/pyright) as my language server. In order for the LSP to work you need to install globally `pyright` and also install `pyright` and `neovim` into your Python virtual environment.
@@ -125,7 +125,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 **Install plugins**
 
-Open the `init.vim` file in neovim and install the plugins using `:PlugInstall` 
+Open the `init.vim` file in neovim and install the plugins using `:PlugInstall`
 
 ### Build symlinks
 
@@ -153,6 +153,6 @@ Brewfile contains the kitchen sink -- might make a more 'minimal' version in the
 ## Resources
 
 These dotfile configuration have been heavily inspired by the following resources. I highly recommend you check them out:
+
 - [Devsalife dotfiles + YouTube channel](https://github.com/craftzdog/dotfiles-public)
 - [Chris Toomey - Tmux Course](https://thoughtbot.com/upcase/tmux)
-
