@@ -23,5 +23,8 @@ keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/")
 -- autoformat files using null-ls
 keymap.set("n", "<leader>b", "<cmd>lua vim.lsp.buf.format()<CR>")
 
+-- apply black to highlighted section of code
+keymap.set("x", "<leader>k", ":!black -q -<CR>")
+
 -- git blame
 keymap.set("n", "<leader>gb", "<cmd>:Git blame<CR>")
