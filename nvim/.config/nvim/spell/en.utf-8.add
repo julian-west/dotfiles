@@ -109,3 +109,7 @@ filename
 getfixturevalue
 SparkSession
 PySpark
+e4ds
+julian
+unittest
+smtplib
