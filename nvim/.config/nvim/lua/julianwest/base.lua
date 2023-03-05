@@ -29,6 +29,7 @@ vim.opt.tabstop = 4
 vim.opt.wrap = false -- No Wrap lines
 vim.opt.backspace = { "start", "eol", "indent" }
 vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
+vim.opt.spell = true
 
 vim.opt.colorcolumn = "88"
 vim.opt.spell.spelllang = "en_gb"
