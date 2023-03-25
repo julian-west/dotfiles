@@ -2,9 +2,9 @@
 
 Dotfile Configurations
 
-<!-- ![dotfiles screenshot](images/dotfiles_screenshot.png) -->
+![dotfiles screenshot](images/nvim-2023-screenshot.png)
 
-Currently using neovim and [fish](https://fishshell.com/) as main editor/terminal combo and using the [Starship prompt](https://starship.rs/).
+Currently using tmux + [fish](https://fishshell.com/) + [Starship prompt](https://starship.rs/) + neovim.
 
 ## Context
 
@@ -18,34 +18,25 @@ I use `pyenv` for Python version and virtual environment management and [FZF](ht
 
 ## NeoVim Setup
 
-- [vim-plug](https://github.com/junegunn/vim-plug) - A minimalist Vim plugin manager
+See `/nvim/.config/nvim/lua/julianwest/plugins.lua` for full list of plugins
+
+- [packer.nvim](https://github.com/wbthomason/packer.nvim) - Plugin Manager
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of configurations for Neovim's built-in LSP
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - [Treesitter](https://github.com/tree-sitter/tree-sitter) configurations and abstraction layer for Neovim
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A completion plugin for neovim coded in Lua
 - [lspsaga.nvim](https://github.com/tami5/lspsaga.nvim) - A light-weight LSP plugin based on Neovim built-in LSP with highly a performant UI
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
-- [NeoSolarized color scheme](https://github.com/overcache/NeoSolarized)
+- [Nightfly color scheme](https://github.com/bluz71/vim-nightfly-colors)
 
-## Fish
+## Fish (shell)
 
-Fish shell and prompt is basically set up exactly the same as oh-my-zsh
+I use [fish](https://fishshell.com/) for my command line.
 
 - [Fish shell](https://fishshell.com/) - shell with great out-of-the-box functionality (syntax highlighting and autocomplete)
 - [Starship (prompt)](https://starship.rs/) - Minimal cross-shell prompt (see starship.toml for config)
 - [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
 - [z for fish](https://github.com/jethrokuan/z) - Directory jumping
 - [Exa](https://the.exa.website/) - `ls` replacement
-
-
-## Oh-my-ZSH
-
-- [Starship (prompt)](https://starship.rs/) - Minimal cross-shell prompt (see starship.toml for config)
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-- [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
-- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
-- [Exa](https://the.exa.website/) - `ls` replacement
-- [z-zsh](https://github.com/agkozak/zsh-z) -- Directory jumping
-- [vi-mode](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode) - Vim keybindings on the command line
 
 ---
 

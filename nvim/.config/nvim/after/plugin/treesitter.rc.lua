@@ -24,9 +24,10 @@ treesitter.setup({
 		"bash",
 		"dockerfile",
 		"markdown",
-        "markdown_inline",
+		"markdown_inline",
 		"make",
 		"lua",
+		"vim",
 	},
 	auto_install = true,
 })
