@@ -68,9 +68,9 @@ return packer.startup(function(use)
 
 	use("neovim/nvim-lspconfig")
 	use("onsails/lspkind-nvim") -- vscode-like pictograms
-	use("hrsh7th/cmp-buffer") -- nvim-cmp source for buffer words
-	use("hrsh7th/cmp-nvim-lsp") -- nvim-cmp source for neovim's built-in LSP
 	use("hrsh7th/nvim-cmp") -- Completion
+	use("hrsh7th/cmp-nvim-lsp") -- nvim-cmp source for neovim's built-in LSP
+	use("hrsh7th/cmp-buffer") -- nvim-cmp source for buffer words
 	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
 
 	use("rmagatti/goto-preview")

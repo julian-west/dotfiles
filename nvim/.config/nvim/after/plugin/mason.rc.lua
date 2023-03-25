@@ -22,7 +22,7 @@ mason_lspconfig.setup({
 		"bashls",
 		"html",
 		"cssls",
-		"sumneko_lua",
+		"lua_ls",
 	},
 	automatic_installation = true,
 })

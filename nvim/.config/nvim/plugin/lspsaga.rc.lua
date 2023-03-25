@@ -3,7 +3,18 @@ if not status then
 	return
 end
 
-saga.init_lsp_saga()
+saga.setup({
+	ui = {
+		winblend = 10,
+		border = "rounded",
+		colors = {
+			normal_bg = "#002b36",
+		},
+	},
+	symbol_in_winbar = {
+		enable = false,
+	},
+})
 
 local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "<C-j>", "<Cmd>Lspsaga diagnostic_jump_next<CR>", opts)

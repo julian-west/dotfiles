@@ -24,6 +24,7 @@ treesitter.setup({
 		"bash",
 		"dockerfile",
 		"markdown",
+        "markdown_inline",
 		"make",
 		"lua",
 	},
