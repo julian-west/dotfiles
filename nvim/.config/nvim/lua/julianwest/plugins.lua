@@ -51,6 +51,8 @@ return packer.startup(function(use)
 	use("APZelos/blamer.nvim")
 	use("tpope/vim-fugitive")
 
+    use("sindrets/diffview.nvim")
+
 	-- syntax highlighting
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -82,6 +84,7 @@ return packer.startup(function(use)
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+    use("https://github.com/godlygeek/tabular")
 
 	-- tmux
 	use("jpalardy/vim-slime")
