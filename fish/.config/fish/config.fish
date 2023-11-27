@@ -20,6 +20,7 @@ end
 alias zl "z -l" # list z directories and scores
 alias gs "git status"
 alias gd "git diff"
+alias gl "git log --pretty='format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(6)%aN%Cred%d %Creset%s'"
 alias gt "starship toggle gcloud disabled" # toggle gcloud info on the prompt
 alias tmux "env TERM=screen-256color tmux" # enable italics in colorschemes
 
